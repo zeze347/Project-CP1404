@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.properties import StringProperty
+from kivy.uix.button import Button
 
 
 class ProductEvent(App):
@@ -49,3 +50,5 @@ class ProductEvent(App):
         with open(filename, "r", encoding="UTF8") as in_file:
             products = in_file.readlines()
         return products
+
+ProductEvent().run()
