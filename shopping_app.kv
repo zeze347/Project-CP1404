@@ -1,0 +1,27 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        text: "CP1404 Meetup"
+        font_size: 24
+
+    BoxLayout:
+        id: product_buttons
+        orientation: 'vertical'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        background_color: 0,0,0,1
+        font_size: 48
+        size_hint_y: 0.2
+
+        Label:
+            id: total_label
+            text: app.status_text
+            font_size: 48
+
+         Button:
+            text: 'Reset'
+            font_size: 48
+            background_color: (1,1,0,1)
+            on_press: app.reset_total()
